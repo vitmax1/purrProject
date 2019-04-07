@@ -1,0 +1,25 @@
+.ready
+	background: url('../img/overlay.png') no-repeat center
+	background-size: cover
+	padding-top: 65px
+	padding-bottom: 50px
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-title
+		font-size: 40px
+		color: #ffffff
+@media (max-width: 968px)
+	.ready
+		&-title
+			font-size: 30px
+@media (max-width: 560px)
+	.ready
+		&-title
+			font-size: 24px
+@media (max-width: 450px)
+	.ready
+		&-wrap
+			flex-direction: column
+		

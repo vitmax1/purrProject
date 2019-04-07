@@ -1,0 +1,73 @@
+.spotlight
+	padding-top: 100px
+	padding-bottom: 115px
+	&-wrap
+		max-width: 1340px
+		padding: 0 20px
+		margin: auto
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-description
+		flex-basis: 37%
+		margin-bottom: 75px
+		padding-right: 10px
+	&-title
+		font-size: 40px
+		+bold
+		color: #7050e5
+		margin-bottom: 10px
+	&-text
+		color: #878787
+		font-size: 15px
+		line-height: 22px
+		margin-top: 10px
+		margin-bottom: 25px
+	&-video
+		position: relative
+		max-width: 730px
+		&:hover::after
+			content: url(../img/play.png)
+			left: 45%
+			top: 40%
+			position: absolute
+			cursor: pointer
+		&:before
+			content: ''
+			display: none
+			width: 100%
+			height: 99%
+			position: absolute
+			background-color: rgba(0, 0, 0, .7)
+		&:hover::before
+			cursor: pointer
+			display: block
+	&-video img
+		max-width: 100%
+@media (max-width: 1030px)
+	.spotlight
+		&-description
+			flex-basis: 45%
+		&-video
+			flex-basis: 55%
+			&:hover::after
+				content: ''
+@media (max-width: 845px)
+	.spotlight
+		padding-top: 50px
+		padding-bottom: 50px
+		&-title
+		  font-size: 30px
+		&-description
+			flex-basis: 40%
+			margin-bottom: 40px
+		&-video
+			flex-basis: 60%
+@media (max-width: 780px)
+	.spotlight
+		padding-top: 25px
+		&-wrap
+			flex-direction: column
+
+
+

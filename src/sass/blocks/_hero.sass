@@ -1,0 +1,129 @@
+.hero
+	background-color: #5f49ce
+	padding-top: 80px
+	padding-bottom: 10px
+	position: relative
+	&-wrap
+		max-width: 1030px
+		margin: auto
+		display: flex
+		padding: 0 20px
+	&-info
+		flex-basis: 100%
+		position: relative
+	&-picture
+		position: absolute
+		right: 10%
+		top: 30%
+	&-image
+		// flex-basis: 40%
+		// text-align: center
+		// padding-left: 110px
+		// padding-top: 90px
+	&-title
+		color: #ffffff
+		font-size: 55px
+		line-height: 18px
+		margin-bottom: 28px
+	&-description
+		font-size: 16px
+		line-height: 30px
+		color: #ffffff
+		max-width: 450px
+		margin-bottom: 43px
+	&-slideNav
+		display: flex
+		flex-direction: column
+		position: absolute
+		right: 3%
+		top: 45%
+		outline: none
+		border: none
+		&__item
+			margin-bottom: 10px
+			position: relative
+		input[type="radio"]
+			display: none
+		label
+			// display: inline-block
+			display: flex
+			flex-direction: column
+			margin-bottom: 10px
+			outline: none
+			border: none
+		i
+			// display: inline-block
+			display: flex
+			flex-direction: column
+			width: 20px
+			height: 20px
+			background: url('../img/slide-radio.png') no-repeat center
+			position: relative
+			cursor: pointer
+			outline: none
+			border: none
+			&:before
+				content: ''
+				position: absolute
+				width: 20px
+				height: 20px
+				background: url('../img/slide-active.png') no-repeat center
+				transform: scale(0)
+				transition: .2s
+				outline: none
+				border: none
+		input:checked+i:before
+			transform: scale(1)
+	&-inline
+		display: flex
+@media (max-width: 968px)
+	.hero
+		&-title
+			font-size: 42px
+@media (max-width: 730px)
+	.hero
+		&-title
+			font-size: 32px
+		&-picture
+			display: none
+	.hero img
+		display: none
+@media (max-width: 680px)
+	.hero
+		padding-top: 40px
+@media (max-width: 630px)
+	.hero
+		&-info
+			flex-basis: 65%
+		&-image
+			flex-basis: 35%
+			padding-left: 0px
+@media (max-width: 540px)
+	.hero
+		padding-top: 30px
+		&-title
+			font-size: 24px
+		&-info
+			flex-basis: 90%
+			margin: auto
+			text-align: center
+		&-image
+			display: none
+@media (max-width: 410px)
+	.hero
+		&-info
+			flex-basis: 90%
+			margin: auto
+			text-align: center
+		&-title
+			font-size: 26px
+		&-description
+			font-size: 14px
+			line-height: 24px
+		&-image
+			display: none
+@media (max-width: 360px)
+	.hero
+		&-title
+			font-size: 26px
+			line-height: 28px

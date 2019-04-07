@@ -1,0 +1,22 @@
+@font-face {
+	font-display: swap;
+	font-family: 'Proxima Nova';
+	src: local('Proxima Nova'),
+		url("../fonts/ProximaNova/ProximaNova-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Proxima Nova Bold';
+	src: local('Proxima Nova'),
+		url("../fonts/ProximaNova/ProximaNova-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-display: swap;
+	font-family: 'Raleway';
+	src: local('Raleway'),
+		url("../fonts/Raleway/Raleway-Light.ttf") format("truetype");
+}
+@mixin bold {
+	font-family: 'Proxima Nova Bold',	serif;
+	font-weight: 700;
+}
